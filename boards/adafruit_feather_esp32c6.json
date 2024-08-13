@@ -1,5 +1,8 @@
 {
   "build": {
+    "arduino":{
+      "ldscript": "esp32c6_out.ld"
+    },
     "core": "esp32",
     "extra_flags": [
       "-DARDUINO_ADAFRUIT_FEATHER_ESP32C6",
@@ -9,6 +12,12 @@
     "f_cpu": "160000000L",
     "f_flash": "80000000L",
     "flash_mode": "qio",
+    "hwids": [
+      [
+        "0X303A",
+        "0x1001"
+      ]
+    ],
     "mcu": "esp32c6",
     "variant": "adafruit_feather_esp32c6"
   },
